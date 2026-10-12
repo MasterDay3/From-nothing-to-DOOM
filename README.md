@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="your-image.jpg" width="250">
+      <img src="https://github.com/MasterDay3.png" width="250">
       <h3>@MasterDay3</h3>
     </td>
     <td align="center" width="50%">
