@@ -1,26 +1,11 @@
-<h2 align="center">First-year Computer Science students, Applied Sciences Faculty, Ukrainian Catholic University (UCU)</h2>
+<h1 align="center">Second-year Computer Science students, Applied Sciences Faculty, Ukrainian Catholic University (UCU)</h1>
 
-<table width="100%">
+<table>
   <tr>
     <td align="center" width="50%">
-      <br>
-      <img src="https://github.com/MasterDay3.png" width="200" alt="Mykola Zabulskyi">
-      <br><br>
-      <a href="https://github.com/MasterDay3"><h2>@MasterDay3</h2></a>
-      <h2>Zabulskyi Mykola</h2>
-      <br>
+      <img src="your-image.jpg" width="250">
+      <h3>@MasterDay3</h3>
     </td>
-
-    <td align="center" width="50%">
-      <br><br><br><br><br><br><br><br>
-    </td>
-  </tr>
-
-  <tr>
-    <td align="center" width="50%">
-      <br><br><br><br><br><br><br><br>
-    </td>
-
     <td align="center" width="50%">
       <br><br><br><br><br><br><br><br>
     </td>
