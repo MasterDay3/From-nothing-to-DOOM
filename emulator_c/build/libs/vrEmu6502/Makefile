@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502//CMakeFiles/progress.marks
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502//CMakeFiles/progress.marks
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/clean
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/preinstall
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/preinstall
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -P /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/Experimental.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -127,12 +128,12 @@ Experimental: libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
 
 # fast build rule for target.
 Experimental/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Experimental.dir/build.make libs/vrEmu6502/CMakeFiles/Experimental.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Experimental.dir/build.make libs/vrEmu6502/CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/Nightly.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -141,12 +142,12 @@ Nightly: libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
 
 # fast build rule for target.
 Nightly/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Nightly.dir/build.make libs/vrEmu6502/CMakeFiles/Nightly.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Nightly.dir/build.make libs/vrEmu6502/CMakeFiles/Nightly.dir/build
 .PHONY : Nightly/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/Continuous.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -155,12 +156,12 @@ Continuous: libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
 
 # fast build rule for target.
 Continuous/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Continuous.dir/build.make libs/vrEmu6502/CMakeFiles/Continuous.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Continuous.dir/build.make libs/vrEmu6502/CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -169,12 +170,12 @@ NightlyMemoryCheck: libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemoryCheck/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -183,12 +184,12 @@ NightlyStart: libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
 
 # fast build rule for target.
 NightlyStart/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build
 .PHONY : NightlyStart/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -197,12 +198,12 @@ NightlyUpdate: libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
 
 # fast build rule for target.
 NightlyUpdate/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -211,12 +212,12 @@ NightlyConfigure: libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
 
 # fast build rule for target.
 NightlyConfigure/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build
 .PHONY : NightlyConfigure/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -225,12 +226,12 @@ NightlyBuild: libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
 
 # fast build rule for target.
 NightlyBuild/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build
 .PHONY : NightlyBuild/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -239,12 +240,12 @@ NightlyTest: libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
 
 # fast build rule for target.
 NightlyTest/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build
 .PHONY : NightlyTest/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -253,12 +254,12 @@ NightlyCoverage: libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
 
 # fast build rule for target.
 NightlyCoverage/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build
 .PHONY : NightlyCoverage/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -267,12 +268,12 @@ NightlyMemCheck: libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemCheck/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -281,12 +282,12 @@ NightlySubmit: libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
 
 # fast build rule for target.
 NightlySubmit/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build.make libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build.make libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -295,12 +296,12 @@ ExperimentalStart: libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
 
 # fast build rule for target.
 ExperimentalStart/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -309,12 +310,12 @@ ExperimentalUpdate: libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # fast build rule for target.
 ExperimentalUpdate/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build
 .PHONY : ExperimentalUpdate/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -323,12 +324,12 @@ ExperimentalConfigure: libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # fast build rule for target.
 ExperimentalConfigure/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -337,12 +338,12 @@ ExperimentalBuild: libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
 
 # fast build rule for target.
 ExperimentalBuild/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -351,12 +352,12 @@ ExperimentalTest: libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
 
 # fast build rule for target.
 ExperimentalTest/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -365,12 +366,12 @@ ExperimentalCoverage: libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # fast build rule for target.
 ExperimentalCoverage/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build
 .PHONY : ExperimentalCoverage/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -379,12 +380,12 @@ ExperimentalMemCheck: libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # fast build rule for target.
 ExperimentalMemCheck/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build
 .PHONY : ExperimentalMemCheck/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -393,12 +394,12 @@ ExperimentalSubmit: libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # fast build rule for target.
 ExperimentalSubmit/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build
 .PHONY : ExperimentalSubmit/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -407,12 +408,12 @@ ContinuousStart: libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
 
 # fast build rule for target.
 ContinuousStart/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -421,12 +422,12 @@ ContinuousUpdate: libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
 
 # fast build rule for target.
 ContinuousUpdate/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -435,12 +436,12 @@ ContinuousConfigure: libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
 
 # fast build rule for target.
 ContinuousConfigure/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -449,12 +450,12 @@ ContinuousBuild: libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
 
 # fast build rule for target.
 ContinuousBuild/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build
 .PHONY : ContinuousBuild/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -463,12 +464,12 @@ ContinuousTest: libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
 
 # fast build rule for target.
 ContinuousTest/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build
 .PHONY : ContinuousTest/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -477,12 +478,12 @@ ContinuousCoverage: libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
 
 # fast build rule for target.
 ContinuousCoverage/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -491,12 +492,12 @@ ContinuousMemCheck: libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # fast build rule for target.
 ContinuousMemCheck/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
 # Convenience name for target.
 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -505,7 +506,7 @@ ContinuousSubmit: libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
 
 # fast build rule for target.
 ContinuousSubmit/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
 # Help Target
@@ -555,6 +556,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -P /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502
+# Install script for directory: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,17 +44,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/src/cmake_install.cmake")
+  include("/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/test/cmake_install.cmake")
+  include("/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502/test/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/install_local_manifest.txt"
+  file(WRITE "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

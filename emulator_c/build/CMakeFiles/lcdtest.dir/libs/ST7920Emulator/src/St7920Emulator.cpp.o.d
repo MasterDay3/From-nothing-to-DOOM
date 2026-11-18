@@ -1,7 +1,7 @@
 CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp \
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp \
  /usr/include/stdc-predef.h \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/include/St7920Emulator.hpp \
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/include/St7920Emulator.hpp \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

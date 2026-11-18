@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/include -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/include -isystem /usr/include/SDL2
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 

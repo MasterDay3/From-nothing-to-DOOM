@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/src
+C_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/src
 
-C_FLAGS = -std=gnu11 -Wall -Wextra -Wpedantic -Werror -march=native
+C_FLAGS = -O3 -DNDEBUG -std=gnu11 -Wall -Wextra -Wpedantic -Werror -march=native
 

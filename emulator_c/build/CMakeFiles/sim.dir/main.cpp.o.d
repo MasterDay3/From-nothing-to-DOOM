@@ -1,5 +1,5 @@
 CMakeFiles/sim.dir/main.cpp.o: \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/main.cpp \
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/main.cpp \
  /usr/include/stdc-predef.h /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_config-x86_64.h \
@@ -39,19 +39,19 @@ CMakeFiles/sim.dir/main.cpp.o: \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/c++/16/stdlib.h \
- /usr/include/c++/16/cstdlib \
+ /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
+ /usr/include/c++/16/stdlib.h /usr/include/c++/16/cstdlib \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/cpu_defines.h \
  /usr/include/c++/16/pstl/pstl_config.h /usr/include/stdlib.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/16/bits/std_abs.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/wchar.h /usr/include/bits/wchar.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/inttypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/16/bits/std_abs.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/wchar.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/ctype.h \
@@ -228,7 +228,7 @@ CMakeFiles/sim.dir/main.cpp.o: \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h /usr/include/c++/16/cstdint \
  /usr/include/c++/16/cstdio /usr/include/c++/16/cstring \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/src/vrEmu6502.h \
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/src/vrEmu6502.h \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdbool.h \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src/vrEmu6522.h \
- /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/include/St7920Emulator.hpp
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src/vrEmu6522.h \
+ /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/include/St7920Emulator.hpp

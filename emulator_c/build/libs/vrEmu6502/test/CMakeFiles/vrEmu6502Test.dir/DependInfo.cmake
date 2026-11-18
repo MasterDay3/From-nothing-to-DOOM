@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/test/vrEmu6502Test.c" "libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o" "gcc" "libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o.d"
+  "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/test/vrEmu6502Test.c" "libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o" "gcc" "libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o.d"
   "" "bin/vrEmu6502Test" "gcc" "libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/link.d"
   )
 

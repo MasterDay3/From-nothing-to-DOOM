@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 # Include any dependencies generated for this target.
 include libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/depend.make
@@ -73,18 +73,18 @@ libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/codegen:
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/codegen
 
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/flags.make
-libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src/vrEmu6522.c
+libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src/vrEmu6522.c
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o"
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o -MF CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o.d -o CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o -c /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src/vrEmu6522.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o"
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o -MF CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o.d -o CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o -c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src/vrEmu6522.c
 
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/vrEmu6522.dir/vrEmu6522.c.i"
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src/vrEmu6522.c > CMakeFiles/vrEmu6522.dir/vrEmu6522.c.i
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src/vrEmu6522.c > CMakeFiles/vrEmu6522.dir/vrEmu6522.c.i
 
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/vrEmu6522.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/vrEmu6522.dir/vrEmu6522.c.s"
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src/vrEmu6522.c -o CMakeFiles/vrEmu6522.dir/vrEmu6522.c.s
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src/vrEmu6522.c -o CMakeFiles/vrEmu6522.dir/vrEmu6522.c.s
 
 # Object files for target vrEmu6522
 vrEmu6522_OBJECTS = \
@@ -97,18 +97,18 @@ libs/vrEmu6522/src/libvrEmu6522.so: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/
 libs/vrEmu6522/src/libvrEmu6522.so: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build.make
 libs/vrEmu6522/src/libvrEmu6522.so: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/compiler_depend.ts
 libs/vrEmu6522/src/libvrEmu6522.so: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libvrEmu6522.so"
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vrEmu6522.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libvrEmu6522.so"
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vrEmu6522.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build: libs/vrEmu6522/src/libvrEmu6522.so
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build
 
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/clean:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src && $(CMAKE_COMMAND) -P CMakeFiles/vrEmu6522.dir/cmake_clean.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src && $(CMAKE_COMMAND) -P CMakeFiles/vrEmu6522.dir/cmake_clean.cmake
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/clean
 
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/DependInfo.cmake "--color=$(COLOR)" vrEmu6522
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/DependInfo.cmake "--color=$(COLOR)" vrEmu6522
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/depend
 

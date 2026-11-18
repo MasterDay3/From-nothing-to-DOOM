@@ -6,5 +6,5 @@ C_DEFINES = -DvrEmu6502_EXPORTS
 
 C_INCLUDES = 
 
-C_FLAGS = -std=gnu11 -fPIC -Wall -Wextra -Wpedantic -Werror -march=native
+C_FLAGS = -O3 -DNDEBUG -std=gnu11 -fPIC -Wall -Wextra -Wpedantic -Werror -march=native
 

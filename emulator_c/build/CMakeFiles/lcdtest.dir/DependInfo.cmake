@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/lcdtest.cpp" "CMakeFiles/lcdtest.dir/lcdtest.cpp.o" "gcc" "CMakeFiles/lcdtest.dir/lcdtest.cpp.o.d"
-  "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp" "CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o" "gcc" "CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d"
+  "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/lcdtest.cpp" "CMakeFiles/lcdtest.dir/lcdtest.cpp.o" "gcc" "CMakeFiles/lcdtest.dir/lcdtest.cpp.o.d"
+  "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp" "CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o" "gcc" "CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d"
   "" "lcdtest" "gcc" "CMakeFiles/lcdtest.dir/link.d"
   )
 

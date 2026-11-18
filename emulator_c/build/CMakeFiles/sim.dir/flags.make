@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/include -I/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/src -I/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522/src -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/include -I/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/src -I/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522/src -isystem /usr/include/SDL2
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra
 

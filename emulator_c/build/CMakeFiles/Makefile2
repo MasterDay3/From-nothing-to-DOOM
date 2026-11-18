@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -223,14 +223,14 @@ CMakeFiles/sim.dir/all: libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/all
 CMakeFiles/sim.dir/all: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=4,5,6 "Built target sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=4,5,6 "Built target sim"
 .PHONY : CMakeFiles/sim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : CMakeFiles/sim.dir/rule
 
 # Convenience name for target.
@@ -240,7 +240,7 @@ sim: CMakeFiles/sim.dir/rule
 # codegen rule for target.
 CMakeFiles/sim.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=4,5,6 "Finished codegen for target sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=4,5,6 "Finished codegen for target sim"
 .PHONY : CMakeFiles/sim.dir/codegen
 
 # clean rule for target.
@@ -255,14 +255,14 @@ CMakeFiles/sim.dir/clean:
 CMakeFiles/lcdtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcdtest.dir/build.make CMakeFiles/lcdtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcdtest.dir/build.make CMakeFiles/lcdtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=1,2,3 "Built target lcdtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=1,2,3 "Built target lcdtest"
 .PHONY : CMakeFiles/lcdtest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lcdtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lcdtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : CMakeFiles/lcdtest.dir/rule
 
 # Convenience name for target.
@@ -272,7 +272,7 @@ lcdtest: CMakeFiles/lcdtest.dir/rule
 # codegen rule for target.
 CMakeFiles/lcdtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lcdtest.dir/build.make CMakeFiles/lcdtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target lcdtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target lcdtest"
 .PHONY : CMakeFiles/lcdtest.dir/codegen
 
 # clean rule for target.
@@ -287,14 +287,14 @@ CMakeFiles/lcdtest.dir/clean:
 libs/vrEmu6502/CMakeFiles/Experimental.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Experimental.dir/build.make libs/vrEmu6502/CMakeFiles/Experimental.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Experimental.dir/build.make libs/vrEmu6502/CMakeFiles/Experimental.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target Experimental"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target Experimental"
 .PHONY : libs/vrEmu6502/CMakeFiles/Experimental.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Experimental.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -304,7 +304,7 @@ Experimental: libs/vrEmu6502/CMakeFiles/Experimental.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/Experimental.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Experimental.dir/build.make libs/vrEmu6502/CMakeFiles/Experimental.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target Experimental"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target Experimental"
 .PHONY : libs/vrEmu6502/CMakeFiles/Experimental.dir/codegen
 
 # clean rule for target.
@@ -319,14 +319,14 @@ libs/vrEmu6502/CMakeFiles/Experimental.dir/clean:
 libs/vrEmu6502/CMakeFiles/Nightly.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Nightly.dir/build.make libs/vrEmu6502/CMakeFiles/Nightly.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Nightly.dir/build.make libs/vrEmu6502/CMakeFiles/Nightly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target Nightly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target Nightly"
 .PHONY : libs/vrEmu6502/CMakeFiles/Nightly.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Nightly.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -336,7 +336,7 @@ Nightly: libs/vrEmu6502/CMakeFiles/Nightly.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/Nightly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Nightly.dir/build.make libs/vrEmu6502/CMakeFiles/Nightly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target Nightly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target Nightly"
 .PHONY : libs/vrEmu6502/CMakeFiles/Nightly.dir/codegen
 
 # clean rule for target.
@@ -351,14 +351,14 @@ libs/vrEmu6502/CMakeFiles/Nightly.dir/clean:
 libs/vrEmu6502/CMakeFiles/Continuous.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Continuous.dir/build.make libs/vrEmu6502/CMakeFiles/Continuous.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Continuous.dir/build.make libs/vrEmu6502/CMakeFiles/Continuous.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target Continuous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target Continuous"
 .PHONY : libs/vrEmu6502/CMakeFiles/Continuous.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/Continuous.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -368,7 +368,7 @@ Continuous: libs/vrEmu6502/CMakeFiles/Continuous.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/Continuous.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/Continuous.dir/build.make libs/vrEmu6502/CMakeFiles/Continuous.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target Continuous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target Continuous"
 .PHONY : libs/vrEmu6502/CMakeFiles/Continuous.dir/codegen
 
 # clean rule for target.
@@ -383,14 +383,14 @@ libs/vrEmu6502/CMakeFiles/Continuous.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -400,7 +400,7 @@ NightlyMemoryCheck: libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyMemoryCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyMemoryCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/codegen
 
 # clean rule for target.
@@ -415,14 +415,14 @@ libs/vrEmu6502/CMakeFiles/NightlyMemoryCheck.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -432,7 +432,7 @@ NightlyStart: libs/vrEmu6502/CMakeFiles/NightlyStart.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyStart.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyStart.dir/codegen
 
 # clean rule for target.
@@ -447,14 +447,14 @@ libs/vrEmu6502/CMakeFiles/NightlyStart.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -464,7 +464,7 @@ NightlyUpdate: libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/codegen
 
 # clean rule for target.
@@ -479,14 +479,14 @@ libs/vrEmu6502/CMakeFiles/NightlyUpdate.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -496,7 +496,7 @@ NightlyConfigure: libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/codegen
 
 # clean rule for target.
@@ -511,14 +511,14 @@ libs/vrEmu6502/CMakeFiles/NightlyConfigure.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -528,7 +528,7 @@ NightlyBuild: libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/codegen
 
 # clean rule for target.
@@ -543,14 +543,14 @@ libs/vrEmu6502/CMakeFiles/NightlyBuild.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -560,7 +560,7 @@ NightlyTest: libs/vrEmu6502/CMakeFiles/NightlyTest.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/codegen
 
 # clean rule for target.
@@ -575,14 +575,14 @@ libs/vrEmu6502/CMakeFiles/NightlyTest.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -592,7 +592,7 @@ NightlyCoverage: libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/codegen
 
 # clean rule for target.
@@ -607,14 +607,14 @@ libs/vrEmu6502/CMakeFiles/NightlyCoverage.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlyMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlyMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -624,7 +624,7 @@ NightlyMemCheck: libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlyMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlyMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/codegen
 
 # clean rule for target.
@@ -639,14 +639,14 @@ libs/vrEmu6502/CMakeFiles/NightlyMemCheck.dir/clean:
 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build.make libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build.make libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target NightlySubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target NightlySubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -656,7 +656,7 @@ NightlySubmit: libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/build.make libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target NightlySubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target NightlySubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/codegen
 
 # clean rule for target.
@@ -671,14 +671,14 @@ libs/vrEmu6502/CMakeFiles/NightlySubmit.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -688,7 +688,7 @@ ExperimentalStart: libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/codegen
 
 # clean rule for target.
@@ -703,14 +703,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalStart.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -720,7 +720,7 @@ ExperimentalUpdate: libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/codegen
 
 # clean rule for target.
@@ -735,14 +735,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalUpdate.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -752,7 +752,7 @@ ExperimentalConfigure: libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/codegen
 
 # clean rule for target.
@@ -767,14 +767,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalConfigure.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -784,7 +784,7 @@ ExperimentalBuild: libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/codegen
 
 # clean rule for target.
@@ -799,14 +799,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalBuild.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -816,7 +816,7 @@ ExperimentalTest: libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/codegen
 
 # clean rule for target.
@@ -831,14 +831,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalTest.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -848,7 +848,7 @@ ExperimentalCoverage: libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/codegen
 
 # clean rule for target.
@@ -863,14 +863,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalCoverage.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -880,7 +880,7 @@ ExperimentalMemCheck: libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/codegen
 
 # clean rule for target.
@@ -895,14 +895,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalMemCheck.dir/clean:
 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ExperimentalSubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -912,7 +912,7 @@ ExperimentalSubmit: libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ExperimentalSubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/codegen
 
 # clean rule for target.
@@ -927,14 +927,14 @@ libs/vrEmu6502/CMakeFiles/ExperimentalSubmit.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -944,7 +944,7 @@ ContinuousStart: libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousStart"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/codegen
 
 # clean rule for target.
@@ -959,14 +959,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousStart.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -976,7 +976,7 @@ ContinuousUpdate: libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousUpdate"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/codegen
 
 # clean rule for target.
@@ -991,14 +991,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousUpdate.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -1008,7 +1008,7 @@ ContinuousConfigure: libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousConfigure"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/codegen
 
 # clean rule for target.
@@ -1023,14 +1023,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousConfigure.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -1040,7 +1040,7 @@ ContinuousBuild: libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousBuild"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/codegen
 
 # clean rule for target.
@@ -1055,14 +1055,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousBuild.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -1072,7 +1072,7 @@ ContinuousTest: libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousTest"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/codegen
 
 # clean rule for target.
@@ -1087,14 +1087,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousTest.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -1104,7 +1104,7 @@ ContinuousCoverage: libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousCoverage"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/codegen
 
 # clean rule for target.
@@ -1119,14 +1119,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousCoverage.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -1136,7 +1136,7 @@ ContinuousMemCheck: libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousMemCheck"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/codegen
 
 # clean rule for target.
@@ -1151,14 +1151,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousMemCheck.dir/clean:
 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Built target ContinuousSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Built target ContinuousSubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -1168,7 +1168,7 @@ ContinuousSubmit: libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/build.make libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num= "Finished codegen for target ContinuousSubmit"
 .PHONY : libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/codegen
 
 # clean rule for target.
@@ -1183,14 +1183,14 @@ libs/vrEmu6502/CMakeFiles/ContinuousSubmit.dir/clean:
 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=7,8 "Built target vrEmu6502"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=7,8 "Built target vrEmu6502"
 .PHONY : libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
 
 # Convenience name for target.
@@ -1200,7 +1200,7 @@ vrEmu6502: libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=7,8 "Finished codegen for target vrEmu6502"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=7,8 "Finished codegen for target vrEmu6502"
 .PHONY : libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/codegen
 
 # clean rule for target.
@@ -1215,14 +1215,14 @@ libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/clean:
 libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/all: libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/build.make libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/build.make libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=9,10 "Built target vrEmu6502Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=9,10 "Built target vrEmu6502Test"
 .PHONY : libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/rule
 
 # Convenience name for target.
@@ -1232,7 +1232,7 @@ vrEmu6502Test: libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/rule
 # codegen rule for target.
 libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/build.make libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=9,10 "Finished codegen for target vrEmu6502Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=9,10 "Finished codegen for target vrEmu6502Test"
 .PHONY : libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/codegen
 
 # clean rule for target.
@@ -1247,14 +1247,14 @@ libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/clean:
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build.make libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build.make libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=11,12 "Built target vrEmu6522"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=11,12 "Built target vrEmu6522"
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/all
 
 # Build rule for subdir invocation for target.
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/rule
 
 # Convenience name for target.
@@ -1264,7 +1264,7 @@ vrEmu6522: libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/rule
 # codegen rule for target.
 libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/build.make libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=11,12 "Finished codegen for target vrEmu6522"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=11,12 "Finished codegen for target vrEmu6522"
 .PHONY : libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/codegen
 
 # clean rule for target.
@@ -1279,6 +1279,7 @@ libs/vrEmu6522/src/CMakeFiles/vrEmu6522.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -20,8 +20,8 @@ bin/vrEmu6502Test: libs/vrEmu6502/src/libvrEmu6502.so \
   /usr/lib64/libc_nonshared.a \
   libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o
 
-libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/test/vrEmu6502Test.c \
-  /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/src/vrEmu6502.h \
+libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/test/vrEmu6502Test.c \
+  /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/src/vrEmu6502.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -131,13 +131,13 @@ libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o: /home/chasyu
 
 /usr/include/bits/types/timer_t.h:
 
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/types/struct_tm.h:
+/usr/include/bits/long-double.h:
 
 /usr/include/bits/endianness.h:
 
 /usr/include/bits/byteswap.h:
+
+/usr/include/bits/time.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -151,7 +151,11 @@ libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o: /home/chasyu
 
 /usr/include/bits/stdint-least.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/src/vrEmu6502.h:
 
 /usr/include/string.h:
 
@@ -159,21 +163,15 @@ libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o: /home/chasyu
 
 /usr/lib64/libc.so:
 
-/usr/include/bits/time.h:
+/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so:
 
-/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/src/vrEmu6502.h:
-
-/usr/include/bits/pthreadtypes.h:
+/usr/lib64/libatomic.so.1.2.0:
 
 /usr/include/bits/floatn-common.h:
 
 /usr/include/bits/libc-header-start.h:
 
 libs/vrEmu6502/test/CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o:
-
-/usr/lib64/libatomic.so.1.2.0:
-
-/usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so:
 
 libs/vrEmu6502/src/libvrEmu6502.so:
 
@@ -182,8 +180,6 @@ libs/vrEmu6502/src/libvrEmu6502.so:
 /usr/lib64/libc_nonshared.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o:
-
-/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502/test/vrEmu6502Test.c:
 
 /lib64/libgcc_s.so.1:
 
@@ -213,6 +209,8 @@ libs/vrEmu6502/src/libvrEmu6502.so:
 
 /usr/include/bits/types/clock_t.h:
 
+/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502/test/vrEmu6502Test.c:
+
 /usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
 
 /usr/include/bits/types/struct_timespec.h:
@@ -224,6 +222,8 @@ libs/vrEmu6502/src/libvrEmu6502.so:
 /usr/include/stdc-predef.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/select.h:
 

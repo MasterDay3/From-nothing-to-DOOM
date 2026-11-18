@@ -5,8 +5,8 @@
 cmake_minimum_required(VERSION 4.3.0)
 
 # CTest Start Step
-set(CTEST_SOURCE_DIRECTORY "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522")
-set(CTEST_BINARY_DIRECTORY "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522")
+set(CTEST_SOURCE_DIRECTORY "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522")
+set(CTEST_BINARY_DIRECTORY "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522")
 
 # CTest Update Step
 set(CTEST_UPDATE_COMMAND "/usr/bin/git")

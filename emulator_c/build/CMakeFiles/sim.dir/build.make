@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sim.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/sim.dir/codegen:
 .PHONY : CMakeFiles/sim.dir/codegen
 
 CMakeFiles/sim.dir/main.cpp.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/main.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/main.cpp
+CMakeFiles/sim.dir/main.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/main.cpp
 CMakeFiles/sim.dir/main.cpp.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/main.cpp.o -MF CMakeFiles/sim.dir/main.cpp.o.d -o CMakeFiles/sim.dir/main.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/main.cpp.o -MF CMakeFiles/sim.dir/main.cpp.o.d -o CMakeFiles/sim.dir/main.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/main.cpp
 
 CMakeFiles/sim.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sim.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/main.cpp > CMakeFiles/sim.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/main.cpp > CMakeFiles/sim.dir/main.cpp.i
 
 CMakeFiles/sim.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/main.cpp -o CMakeFiles/sim.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/main.cpp -o CMakeFiles/sim.dir/main.cpp.s
 
 CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp
+CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp
 CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -MF CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d -o CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -MF CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d -o CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp
 
 CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp > CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp > CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i
 
 CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp -o CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp -o CMakeFiles/sim.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s
 
 # Object files for target sim
 sim_OBJECTS = \
@@ -117,7 +117,7 @@ sim: libs/vrEmu6522/src/libvrEmu6522.so
 sim: /usr/lib64/libSDL2main.a
 sim: /usr/lib64/libSDL2-2.0.so.0.3200.74
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/sim.dir/clean:
 .PHONY : CMakeFiles/sim.dir/clean
 
 CMakeFiles/sim.dir/depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles/sim.dir/DependInfo.cmake "--color=$(COLOR)" sim
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/sim.dir/DependInfo.cmake "--color=$(COLOR)" sim
 .PHONY : CMakeFiles/sim.dir/depend
 

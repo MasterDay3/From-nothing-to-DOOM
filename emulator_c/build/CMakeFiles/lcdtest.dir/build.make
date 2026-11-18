@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lcdtest.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/lcdtest.dir/codegen:
 .PHONY : CMakeFiles/lcdtest.dir/codegen
 
 CMakeFiles/lcdtest.dir/lcdtest.cpp.o: CMakeFiles/lcdtest.dir/flags.make
-CMakeFiles/lcdtest.dir/lcdtest.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/lcdtest.cpp
+CMakeFiles/lcdtest.dir/lcdtest.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/lcdtest.cpp
 CMakeFiles/lcdtest.dir/lcdtest.cpp.o: CMakeFiles/lcdtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lcdtest.dir/lcdtest.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lcdtest.dir/lcdtest.cpp.o -MF CMakeFiles/lcdtest.dir/lcdtest.cpp.o.d -o CMakeFiles/lcdtest.dir/lcdtest.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/lcdtest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lcdtest.dir/lcdtest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lcdtest.dir/lcdtest.cpp.o -MF CMakeFiles/lcdtest.dir/lcdtest.cpp.o.d -o CMakeFiles/lcdtest.dir/lcdtest.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/lcdtest.cpp
 
 CMakeFiles/lcdtest.dir/lcdtest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lcdtest.dir/lcdtest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/lcdtest.cpp > CMakeFiles/lcdtest.dir/lcdtest.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/lcdtest.cpp > CMakeFiles/lcdtest.dir/lcdtest.cpp.i
 
 CMakeFiles/lcdtest.dir/lcdtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lcdtest.dir/lcdtest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/lcdtest.cpp -o CMakeFiles/lcdtest.dir/lcdtest.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/lcdtest.cpp -o CMakeFiles/lcdtest.dir/lcdtest.cpp.s
 
 CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: CMakeFiles/lcdtest.dir/flags.make
-CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp
+CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp
 CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o: CMakeFiles/lcdtest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -MF CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d -o CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -MF CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o.d -o CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.o -c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp
 
 CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp > CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp > CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.i
 
 CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/ST7920Emulator/src/St7920Emulator.cpp -o CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/ST7920Emulator/src/St7920Emulator.cpp -o CMakeFiles/lcdtest.dir/libs/ST7920Emulator/src/St7920Emulator.cpp.s
 
 # Object files for target lcdtest
 lcdtest_OBJECTS = \
@@ -115,7 +115,7 @@ lcdtest: CMakeFiles/lcdtest.dir/compiler_depend.ts
 lcdtest: /usr/lib64/libSDL2main.a
 lcdtest: /usr/lib64/libSDL2-2.0.so.0.3200.74
 lcdtest: CMakeFiles/lcdtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lcdtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lcdtest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lcdtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/lcdtest.dir/clean:
 .PHONY : CMakeFiles/lcdtest.dir/clean
 
 CMakeFiles/lcdtest.dir/depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles/lcdtest.dir/DependInfo.cmake "--color=$(COLOR)" lcdtest
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/lcdtest.dir/DependInfo.cmake "--color=$(COLOR)" lcdtest
 .PHONY : CMakeFiles/lcdtest.dir/depend
 

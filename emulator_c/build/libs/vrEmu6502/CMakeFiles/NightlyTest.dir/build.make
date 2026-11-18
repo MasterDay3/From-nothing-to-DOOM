@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 # Utility rule file for NightlyTest.
 
@@ -67,7 +67,7 @@ include libs/vrEmu6502/CMakeFiles/NightlyTest.dir/compiler_depend.make
 include libs/vrEmu6502/CMakeFiles/NightlyTest.dir/progress.make
 
 libs/vrEmu6502/CMakeFiles/NightlyTest:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502 && /usr/bin/ctest -DMODEL=Nightly -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502 && /usr/bin/ctest -DMODEL=Nightly -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V
 
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/codegen:
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/codegen
@@ -81,10 +81,10 @@ libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build: NightlyTest
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/build
 
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/clean:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502 && $(CMAKE_COMMAND) -P CMakeFiles/NightlyTest.dir/cmake_clean.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502 && $(CMAKE_COMMAND) -P CMakeFiles/NightlyTest.dir/cmake_clean.cmake
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/clean
 
 libs/vrEmu6502/CMakeFiles/NightlyTest.dir/depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6502 /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502 /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/CMakeFiles/NightlyTest.dir/DependInfo.cmake "--color=$(COLOR)" NightlyTest
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6502 /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502 /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502/CMakeFiles/NightlyTest.dir/DependInfo.cmake "--color=$(COLOR)" NightlyTest
 .PHONY : libs/vrEmu6502/CMakeFiles/NightlyTest.dir/depend
 

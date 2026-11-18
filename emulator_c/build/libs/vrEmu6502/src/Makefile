@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd
+CMAKE_SOURCE_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build
+CMAKE_BINARY_DIR = /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/src//CMakeFiles/progress.marks
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/CMakeFiles 0
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6502/src//CMakeFiles/progress.marks
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/clean
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/preinstall
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/preinstall
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -P /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
 .PHONY : libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
 
 # Convenience name for target.
@@ -127,7 +128,7 @@ vrEmu6502: libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/rule
 
 # fast build rule for target.
 vrEmu6502/fast:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build
 .PHONY : vrEmu6502/fast
 
 vrEmu6502.o: vrEmu6502.c.o
@@ -135,7 +136,7 @@ vrEmu6502.o: vrEmu6502.c.o
 
 # target to build an object file
 vrEmu6502.c.o:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.o
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.o
 .PHONY : vrEmu6502.c.o
 
 vrEmu6502.i: vrEmu6502.c.i
@@ -143,7 +144,7 @@ vrEmu6502.i: vrEmu6502.c.i
 
 # target to preprocess a source file
 vrEmu6502.c.i:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.i
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.i
 .PHONY : vrEmu6502.c.i
 
 vrEmu6502.s: vrEmu6502.c.s
@@ -151,7 +152,7 @@ vrEmu6502.s: vrEmu6502.c.s
 
 # target to generate assembly for a file
 vrEmu6502.c.s:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.s
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(MAKE) $(MAKESILENT) -f libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/build.make libs/vrEmu6502/src/CMakeFiles/vrEmu6502.dir/vrEmu6502.c.s
 .PHONY : vrEmu6502.c.s
 
 # Help Target
@@ -177,6 +178,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -P /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

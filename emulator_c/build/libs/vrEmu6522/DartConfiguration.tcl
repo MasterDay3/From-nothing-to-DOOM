@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522
-BuildDirectory: /home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6522
+SourceDirectory: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522
+BuildDirectory: /home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/build/libs/vrEmu6522
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/libs/vrEmu6522"
+ConfigureCommand: "/usr/bin/cmake" "/home/chasyuk/Documents/year_2/POK_semester_project/github/emulator_c/libs/vrEmu6522"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
