@@ -308,6 +308,12 @@ exit_found:
     jsr text_screen
     PRINT ROW1, s_exit
     jsr show_kills
+.ifdef DEMO_LEVEL
+@release_exit:           ; той самий MIDDLE не має одразу закрити результат
+    lda PORTA
+    and #BTN_MID
+    beq @release_exit
+.endif
     jsr wait_mid
     jmp new_game
 
@@ -1989,6 +1995,9 @@ mini_glyphs:
 
 ; Карта 32x32 з оригіналу: 1-4 стіни, 5 двері, 6 вихід, 7 демон
 map_rom:
+.ifdef DEMO_LEVEL
+    .include "doom_demo_map.inc"
+.else
     .byte 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
     .byte 1,0,0,0,0,0,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,1
     .byte 1,0,0,0,0,7,5,0,0,2,2,2,0,0,0,0,0,0,3,3,3,0,0,5,0,0,3,3,3,0,0,1
@@ -2021,6 +2030,8 @@ map_rom:
     .byte 1,0,2,2,0,0,2,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,1
     .byte 1,0,0,0,0,0,2,0,0,0,0,3,3,0,0,1,1,0,0,0,0,0,4,4,0,0,0,0,0,0,0,1
     .byte 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+.endif
+.assert * - map_rom = 1024, error, "map must be 32x32"
 
 .segment "VECTORS"
     .word nmi, reset, irq

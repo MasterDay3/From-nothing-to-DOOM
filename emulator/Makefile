@@ -23,6 +23,10 @@ rom.bin: $(PROG).s lcd.inc board.cfg doom_data.inc | check-cpu
 	$(CA65) --cpu W65C02 $(PROG).s -o $(PROG).o
 	$(LD65) -C board.cfg $(PROG).o -o rom.bin
 
+doom-demo.bin: doom.s doom_demo_map.inc lcd.inc board.cfg doom_data.inc | check-cpu
+	$(CA65) --cpu W65C02 -D DEMO_LEVEL=1 doom.s -o doom-demo.o
+	$(LD65) -C board.cfg doom-demo.o -o doom-demo.bin
+
 run: rom.bin
 	$(PY) gui.py rom.bin
 
@@ -30,9 +34,9 @@ cli: rom.bin
 	$(PY) emu.py rom.bin 200000
 
 test: check-cpu
-	cd tests && $(PY) test_emu.py && $(PY) test_programs.py && $(PY) test_mobs.py
+	cd tests && $(PY) test_emu.py && $(PY) test_programs.py && $(PY) test_mobs.py && $(PY) test_demo.py
 
 clean:
-	rm -f *.o rom.bin
+	rm -f *.o rom.bin doom-demo.bin
 
-.PHONY: rom.bin run cli test clean check-cpu
+.PHONY: rom.bin doom-demo.bin run cli test clean check-cpu

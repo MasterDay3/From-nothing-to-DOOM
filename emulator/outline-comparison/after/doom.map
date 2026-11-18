@@ -1,0 +1,32 @@
+Modules list:
+-------------
+doom.o:
+    CODE              Offs=000000  Size=000C61  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=0020E9  Align=00001  Fill=0000
+    ZEROPAGE          Offs=000000  Size=000086  Align=00001  Fill=0000
+    VECTORS           Offs=000000  Size=000006  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+ZEROPAGE              000000  000085  000086  00001
+CODE                  008000  008C60  000C61  00001
+RODATA                008C61  00AD49  0020E9  00001
+VECTORS               00FFFA  00FFFF  000006  00001
+
+
+Exports list by name:
+---------------------
+
+
+
+Exports list by value:
+----------------------
+
+
+
+Imports list:
+-------------
+

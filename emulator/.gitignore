@@ -1,3 +1,4 @@
 *.o
 rom.bin
+doom-demo.bin
 __pycache__/

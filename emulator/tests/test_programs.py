@@ -112,5 +112,24 @@ def test_doom_columns_and_display():
     assert b.lcd.too_fast == 0 and b.lcd.early == 0
 
 
+def test_doom_death_disables_graphics_without_clearing_gdram():
+    b = board("doom.s")
+    b.run(200_000)
+    press(b, MID, gap=1_500_000)
+    assert b.lcd.graphics and b.mem[b.labels["hp"]] == 6
+    b.mem[b.labels["hp"]] = 1
+    limit = b.cpu.processorCycles + 11_000_000
+    while b.cpu.pc != b.labels["died"] and b.cpu.processorCycles < limit:
+        b.run(1)
+    assert b.cpu.pc == b.labels["died"]
+    old_gdram = bytes(b.lcd.gdram)
+    assert any(old_gdram)
+    b.run(250_000)
+    assert not b.lcd.graphics
+    assert b.lcd.text_row(0).startswith(b"YOU DIED")
+    assert bytes(b.lcd.gdram) == old_gdram
+    assert b.lcd.early == 0 and b.lcd.too_fast == 0
+
+
 if __name__ == "__main__":
     run_tests(globals())

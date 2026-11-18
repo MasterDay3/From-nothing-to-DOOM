@@ -1,0 +1,44 @@
+{
+  "none": {
+    "render_view": 108532,
+    "lcd_flush": 163424,
+    "update_view": 583052,
+    "visible_columns": 0
+  },
+  "dark": {
+    "render_view": 140161,
+    "lcd_flush": 163391,
+    "update_view": 620952,
+    "visible_columns": 16
+  },
+  "light": {
+    "render_view": 199245,
+    "lcd_flush": 163457,
+    "update_view": 549140,
+    "visible_columns": 16
+  },
+  "occluded": {
+    "render_view": 174881,
+    "lcd_flush": 163459,
+    "update_view": 644529,
+    "visible_columns": 5
+  },
+  "far": {
+    "render_view": 114339,
+    "lcd_flush": 163424,
+    "update_view": 592019,
+    "visible_columns": 7
+  },
+  "near": {
+    "render_view": 195037,
+    "lcd_flush": 163391,
+    "update_view": 679669,
+    "visible_columns": 27
+  },
+  "multiple": {
+    "render_view": 197249,
+    "lcd_flush": 163424,
+    "update_view": 689637,
+    "visible_columns": 45
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "none": {
+    "render_view": 107879,
+    "lcd_flush": 163391,
+    "update_view": 580499,
+    "visible_columns": 0
+  },
+  "dark": {
+    "render_view": 141352,
+    "lcd_flush": 163424,
+    "update_view": 620223,
+    "visible_columns": 16
+  },
+  "light": {
+    "render_view": 199896,
+    "lcd_flush": 163490,
+    "update_view": 547725,
+    "visible_columns": 16
+  },
+  "occluded": {
+    "render_view": 174562,
+    "lcd_flush": 163490,
+    "update_view": 642349,
+    "visible_columns": 5
+  },
+  "far": {
+    "render_view": 114123,
+    "lcd_flush": 163424,
+    "update_view": 589887,
+    "visible_columns": 7
+  },
+  "near": {
+    "render_view": 199310,
+    "lcd_flush": 163424,
+    "update_view": 681933,
+    "visible_columns": 27
+  },
+  "multiple": {
+    "render_view": 201746,
+    "lcd_flush": 163424,
+    "update_view": 691912,
+    "visible_columns": 45
+  }
+}

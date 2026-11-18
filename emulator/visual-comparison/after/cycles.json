@@ -1,0 +1,117 @@
+{
+  "start": {
+    "render_view": 237655,
+    "lcd_flush": 164056,
+    "update_view": 556967
+  },
+  "turn_partial": {
+    "render_view": 242729,
+    "lcd_flush": 99308,
+    "update_view": 496064
+  },
+  "dark_near": {
+    "render_view": 143044,
+    "lcd_flush": 163904,
+    "update_view": 622898
+  },
+  "dark_far": {
+    "render_view": 118552,
+    "lcd_flush": 163871,
+    "update_view": 595274
+  },
+  "light_near": {
+    "render_view": 205184,
+    "lcd_flush": 163904,
+    "update_view": 553910
+  },
+  "light_far": {
+    "render_view": 126444,
+    "lcd_flush": 163970,
+    "update_view": 542884
+  },
+  "occluded": {
+    "render_view": 178269,
+    "lcd_flush": 163906,
+    "update_view": 646997
+  },
+  "corridor": {
+    "render_view": 331312,
+    "lcd_flush": 163970,
+    "update_view": 627379
+  },
+  "lod2_0": {
+    "render_view": 263969,
+    "lcd_flush": 106750,
+    "update_view": 512475
+  },
+  "lod2_1": {
+    "render_view": 264614,
+    "lcd_flush": 63193,
+    "update_view": 469550
+  },
+  "lod2_2": {
+    "render_view": 275608,
+    "lcd_flush": 55262,
+    "update_view": 463269
+  },
+  "lod2_3": {
+    "render_view": 275815,
+    "lcd_flush": 74920,
+    "update_view": 482906
+  },
+  "lod2_4": {
+    "render_view": 287452,
+    "lcd_flush": 63120,
+    "update_view": 482431
+  },
+  "lod25_0": {
+    "render_view": 218903,
+    "lcd_flush": 108479,
+    "update_view": 470082
+  },
+  "lod25_1": {
+    "render_view": 228858,
+    "lcd_flush": 59727,
+    "update_view": 431400
+  },
+  "lod25_2": {
+    "render_view": 230061,
+    "lcd_flush": 70858,
+    "update_view": 443540
+  },
+  "lod25_3": {
+    "render_view": 230063,
+    "lcd_flush": 49417,
+    "update_view": 421954
+  },
+  "lod25_4": {
+    "render_view": 240462,
+    "lcd_flush": 46677,
+    "update_view": 429596
+  },
+  "lod4_0": {
+    "render_view": 176042,
+    "lcd_flush": 87640,
+    "update_view": 426091
+  },
+  "lod4_1": {
+    "render_view": 176010,
+    "lcd_flush": 38622,
+    "update_view": 377079
+  },
+  "lod4_2": {
+    "render_view": 177662,
+    "lcd_flush": 45861,
+    "update_view": 376515
+  },
+  "lod4_3": {
+    "render_view": 178022,
+    "lcd_flush": 42328,
+    "update_view": 373325
+  },
+  "lod4_4": {
+    "render_view": 178049,
+    "lcd_flush": 45102,
+    "update_view": 375980
+  }
+}

@@ -15,7 +15,7 @@ VECTORS = """
 """
 
 
-def build(source, name="prog"):
+def build(source, name="prog", defines=()):
     """source: текст програми або ім'я .s-файлу в корені проєкту. Повертає шлях до rom.bin."""
     tmp = tempfile.mkdtemp()
     if source.endswith(".s"):
@@ -27,7 +27,8 @@ def build(source, name="prog"):
     obj = os.path.join(tmp, name + ".o")
     rom = os.path.join(tmp, "rom.bin")
     lbl = os.path.join(tmp, "labels.txt")
-    subprocess.run([os.environ.get("CA65", "ca65"), "-g", "--cpu", "W65C02", "-I", ROOT, src, "-o", obj], check=True)
+    options = [item for define in defines for item in ("-D", define)]
+    subprocess.run([os.environ.get("CA65", "ca65"), "-g", "--cpu", "W65C02", *options, "-I", ROOT, src, "-o", obj], check=True)
     subprocess.run([os.environ.get("LD65", "ld65"), "-C", os.path.join(ROOT, "board.cfg"), obj, "-o", rom, "-Ln", lbl], check=True)
     return rom, lbl
 
@@ -42,8 +43,8 @@ def labels(path):
     return out
 
 
-def board(source):
-    rom, lbl = build(source)
+def board(source, defines=()):
+    rom, lbl = build(source, defines=defines)
     b = Board(rom)
     b.labels = labels(lbl)
     return b
