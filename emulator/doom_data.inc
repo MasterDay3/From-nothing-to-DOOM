@@ -414,16 +414,16 @@ sqhi1:
 expand:
     .byte $00, $40, $80, $C0, $00, $10, $20, $30, $00, $04, $08, $0C, $00, $01, $02, $03
 textures:
-    .byte $FE, $FF, $FE, $FF, $FE, $FF, $FE, $FF, $FE, $FF, $FE, $FF, $FE, $FF, $00, $00
-    .byte $EF, $FF, $EF, $FF, $EF, $FF, $EF, $FF, $EF, $FF, $EF, $FF, $EF, $FF, $00, $00
-    .byte $FE, $FE, $FE, $FE, $FE, $FE, $00, $00, $EF, $EF, $EF, $EF, $EF, $EF, $00, $00
-    .byte $FE, $FE, $FE, $FE, $FE, $FE, $00, $00, $EF, $EF, $EF, $EF, $EF, $EF, $00, $00
-    .byte $F7, $DF, $DE, $F7, $FB, $EF, $BE, $F7, $F7, $BF, $EF, $7B, $BD, $EF, $FD, $EF
-    .byte $DE, $FD, $FB, $DD, $EF, $AF, $BF, $7F, $F7, $7B, $DF, $BD, $FD, $7F, $BD, $FB
-    .byte $FF, $FF, $80, $01, $BC, $3D, $A4, $25, $BC, $3D, $98, $19, $80, $01, $FF, $FF
-    .byte $FF, $FF, $80, $01, $87, $E1, $85, $A1, $87, $E1, $82, $41, $80, $01, $FF, $FF
-    .byte $7F, $FE, $40, $02, $5F, $FA, $50, $0A, $57, $EA, $54, $2A, $55, $AA, $55, $AA
-    .byte $55, $AA, $55, $AA, $54, $2A, $57, $EA, $50, $0A, $5F, $FA, $40, $02, $7F, $FE
+    .byte $00, $00, $00, $00, $FC, $FF, $FC, $FF, $DC, $FF, $EC, $F7, $FC, $EF, $FC, $FF
+    .byte $00, $00, $00, $00, $E7, $FF, $E7, $FF, $E7, $BF, $E7, $DF, $E7, $FF, $E7, $FF
+    .byte $00, $00, $FE, $FE, $DE, $F6, $FE, $FE, $00, $00, $EF, $EF, $AD, $EB, $EF, $EF
+    .byte $00, $00, $FE, $FE, $F6, $DE, $FE, $FE, $00, $00, $EF, $EF, $AF, $6D, $EF, $EF
+    .byte $00, $00, $FC, $FF, $CC, $CF, $84, $87, $CC, $CF, $EC, $EF, $FC, $FF, $FC, $FF
+    .byte $00, $00, $E7, $FF, $E7, $39, $E6, $10, $E7, $39, $E7, $BD, $E7, $FF, $E7, $FF
+    .byte $00, $00, $7F, $FE, $60, $06, $6E, $76, $6E, $76, $60, $06, $65, $46, $70, $0E
+    .byte $7F, $FE, $00, $00, $67, $FE, $67, $3E, $66, $1E, $67, $3E, $67, $FE, $00, $00
+    .byte $00, $00, $6F, $F6, $6F, $F6, $7F, $FE, $70, $0E, $77, $EE, $77, $EE, $76, $6E
+    .byte $76, $6E, $77, $EE, $77, $EE, $70, $0E, $7F, $FE, $6F, $F6, $6F, $F6, $00, $00
     .byte $FF, $FF, $80, $01, $BA, $AF, $A2, $A5, $B1, $25, $A2, $A5, $BA, $A5, $80, $01
     .byte $FF, $FF, $80, $01, $BF, $FD, $A0, $05, $AF, $F5, $A0, $05, $BF, $FD, $FF, $FF
     .byte $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF

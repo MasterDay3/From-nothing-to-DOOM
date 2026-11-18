@@ -27,8 +27,8 @@ def build(source, name="prog"):
     obj = os.path.join(tmp, name + ".o")
     rom = os.path.join(tmp, "rom.bin")
     lbl = os.path.join(tmp, "labels.txt")
-    subprocess.run(["ca65", "-g", "--cpu", "65C02", "-I", ROOT, src, "-o", obj], check=True)
-    subprocess.run(["ld65", "-C", os.path.join(ROOT, "board.cfg"), obj, "-o", rom, "-Ln", lbl], check=True)
+    subprocess.run([os.environ.get("CA65", "ca65"), "-g", "--cpu", "W65C02", "-I", ROOT, src, "-o", obj], check=True)
+    subprocess.run([os.environ.get("LD65", "ld65"), "-C", os.path.join(ROOT, "board.cfg"), obj, "-o", rom, "-Ln", lbl], check=True)
     return rom, lbl
 
 

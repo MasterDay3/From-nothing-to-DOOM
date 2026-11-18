@@ -83,14 +83,32 @@ def test_doom_move_turn_and_kill_demon():
     assert b.lcd.graphics
     assert (m[L["posX_hi"]], m[L["posY_hi"]], m[L["hp"]], m[L["ammo"]]) == (2, 2, 6, 6)
 
-    press(b, MID, gap=1_500_000)        # демон прямо по курсу
+    press(b, MID, gap=3_000_000)        # два кадри пострілу
     assert m[L["kills"]] == 1 and m[L["ammo"]] == 6
 
-    press(b, RIGHT, gap=700_000)
+    press(b, RIGHT, gap=1_500_000)
     assert m[L["p_angle"]] == 8
     x0 = m[L["posX_hi"]] * 256 + m[L["posX_lo"]]
-    press(b, UP, gap=700_000)
+    press(b, UP, gap=1_500_000)
     assert m[L["posX_hi"]] * 256 + m[L["posX_lo"]] > x0
+    assert b.lcd.too_fast == 0 and b.lcd.early == 0
+
+
+def test_doom_columns_and_display():
+    b = board("doom.s")
+    rays = 64
+    b.mem[0x0F00] = 0xA5             # після найбільшого масиву стовпців
+    b.mem[0x1400] = 0x5A             # після shadow-буфера
+    b.run(200_000)
+    press(b, MID, gap=2_000_000)
+    assert b.mem[0x0F00] == 0xA5 and b.mem[0x1400] == 0x5A
+    assert b.lcd.graphics and b.lcd.display_on
+    assert all(b.mem[0x0200 + y * 16 + x] ==
+               b.lcd.gdram[(y % 32) * 32 + (16 if y >= 32 else 0) + x]
+               for y in range(64) for x in range(16))
+    stop, su = 0x0A00 + 6 * rays, 0x0A00 + 9 * rays
+    demon_columns = [i for i in range(rays) if b.mem[stop + i]]
+    assert demon_columns and all(b.mem[su + i] < 32 for i in demon_columns)
     assert b.lcd.too_fast == 0 and b.lcd.early == 0
 
 

@@ -1,0 +1,22 @@
+{
+  "start": {
+    "render_view": 230573,
+    "lcd_flush": 164312,
+    "update_view": 550087
+  },
+  "turn": {
+    "render_view": 235651,
+    "lcd_flush": 97589,
+    "update_view": 487207
+  },
+  "close": {
+    "render_view": 409595,
+    "lcd_flush": 139295,
+    "update_view": 664913
+  },
+  "far": {
+    "render_view": 225843,
+    "lcd_flush": 140286,
+    "update_view": 518319
+  }
+}

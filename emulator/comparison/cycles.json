@@ -1,0 +1,30 @@
+{
+  "64": {
+    "start": {
+      "cast_all": 124668,
+      "render_view": 230718,
+      "lcd_flush": 164378,
+      "update_view": 550298
+    },
+    "turn": {
+      "cast_all": 123455,
+      "render_view": 235778,
+      "lcd_flush": 99168,
+      "update_view": 488913
+    }
+  },
+  "128": {
+    "start": {
+      "cast_all": 259629,
+      "render_view": 463755,
+      "lcd_flush": 163353,
+      "update_view": 918638
+    },
+    "turn": {
+      "cast_all": 257248,
+      "render_view": 477130,
+      "lcd_flush": 98010,
+      "update_view": 864311
+    }
+  }
+}
