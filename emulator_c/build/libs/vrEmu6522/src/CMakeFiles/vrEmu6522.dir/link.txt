@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,--dependency-file=CMakeFiles/vrEmu6522.dir/link.d -Wl,-soname,libvrEmu6522.so -o libvrEmu6522.so CMakeFiles/vrEmu6522.dir/vrEmu6522.c.o

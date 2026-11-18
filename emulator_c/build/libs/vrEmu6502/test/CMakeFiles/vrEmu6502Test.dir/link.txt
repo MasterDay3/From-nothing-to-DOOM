@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/vrEmu6502Test.dir/link.d CMakeFiles/vrEmu6502Test.dir/vrEmu6502Test.c.o -o ../../../bin/vrEmu6502Test  -Wl,-rpath,/home/chasyuk/Documents/year_2/POK_semester_project/emulator/custom/6502-lcd/build/libs/vrEmu6502/src ../src/libvrEmu6502.so

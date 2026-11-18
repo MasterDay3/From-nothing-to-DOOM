@@ -1,0 +1,9 @@
+[submodule "libs/vrEmu6502"]
+	path = libs/vrEmu6502
+	url = https://github.com/visrealm/vrEmu6502.git
+[submodule "libs/vrEmu6522"]
+	path = libs/vrEmu6522
+	url = https://github.com/visrealm/vrEmu6522.git
+[submodule "libs/ST7920Emulator"]
+	path = libs/ST7920Emulator
+	url = https://github.com/teeminus/ST7920Emulator.git

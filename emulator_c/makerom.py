@@ -1,0 +1,35 @@
+rom = bytearray([0xEA]) * 0x8000
+
+code = [
+ 0xA9,0xFF, 0x8D,0x02,0x60,   # DDRB = $FF (PB0-7 outputs)
+ 0xA9,0xE0, 0x8D,0x03,0x60,   # DDRA = $E0 (PA5,PA6,PA7 outputs)
+ 0xA2,0x00,                   # LDX #0
+ # loop = $800C
+ 0xBD,0x00,0x81,              # LDA $8100,X   (RS flag, or $FF = end)
+ 0xC9,0xFF,                   # CMP #$FF
+ 0xF0,0x17,                   # BEQ done
+ 0xA8,                        # TAY
+ 0xE8,                        # INX
+ 0xBD,0x00,0x81,              # LDA $8100,X   (data byte)
+ 0x8D,0x00,0x60,              # STA $6000     (ORB: data on DB0-7)
+ 0x98,                        # TYA
+ 0x09,0xC0,                   # ORA #$C0      (backlight + E high)
+ 0x8D,0x01,0x60,              # STA $6001     (ORA)
+ 0x29,0xBF,                   # AND #$BF      (E low)
+ 0x8D,0x01,0x60,              # STA $6001     (falling edge)
+ 0xE8,                        # INX
+ 0x4C,0x0C,0x80,              # JMP loop
+ # done = $802A
+ 0x4C,0x2A,0x80,              # JMP done
+]
+rom[0:len(code)] = bytes(code)
+
+# (RS, data) pairs: RS $00 = command, $20 = data
+table = [0x00,0x30, 0x00,0x30,  0x00,0x0C, 0x00,0x01,
+         0x00,0x06, 0x20,0x48, 0x20,0x69,
+         0xFF]
+rom[0x100:0x100+len(table)] = bytes(table)
+
+rom[0x7FFC] = 0x00; rom[0x7FFD] = 0x80  # reset vector -> $8000
+open("rom.bin","wb").write(rom)
+print("rom.bin written")
