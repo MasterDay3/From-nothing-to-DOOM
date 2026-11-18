@@ -49,6 +49,10 @@ FAR_TEX  = 40           ; далі 2.5 клітинки стіни без тек
 DOOR_RANGE = 32         ; двері/вихід ближче 2 клітинок (1/16 клітинки)
 TICK     = 20000 - 2    ; 20 мс
 TURN     = 8            ; 11.25 градуса за натискання
+MOB_INTERVAL = 500      ; 500 тіків по 20 мс = 10 секунд при 1 МГц
+MOB_RANGE = 6           ; мангеттенська відстань у клітинках
+MOB_DAMAGE = 1
+.assert MOB_INTERVAL > 0 .and MOB_INTERVAL <= 65535, error, "invalid mob interval"
 
 T_DOOR  = 5
 T_EXIT  = 6
@@ -130,6 +134,26 @@ candl:    .res 1
 candh:    .res 1
 
 tick:     .res 1
+mob_active: .res 1
+mob_pending: .res 1
+mob_timer_lo: .res 1
+mob_timer_hi: .res 1
+mob_changed: .res 1
+mob_scan_x: .res 1
+mob_scan_y: .res 1
+mob_x: .res 1
+mob_y: .res 1
+mob_dx: .res 1
+mob_dy: .res 1
+mob_sx: .res 1
+mob_sy: .res 1
+mob_los_x: .res 1
+mob_los_y: .res 1
+mob_err: .res 1
+mob_e2: .res 1
+mob_old_x: .res 1
+mob_old_y: .res 1
+mob_moved_x: .res 1
 btn:      .res 1
 btn_prev: .res 1
 rep:      .res 1
@@ -187,6 +211,8 @@ reset:
     lda #%11000000
     sta IER
     stz tick
+    stz mob_active
+    stz mob_pending
     cli
 
     jsr text_screen
@@ -211,6 +237,15 @@ new_game:
     sta hp
     sta ammo
     stz btn_prev
+    sei                 ; перший хід через повні 500 тіків від початку рівня
+    stz mob_pending
+    lda #<MOB_INTERVAL
+    sta mob_timer_lo
+    lda #>MOB_INTERVAL
+    sta mob_timer_hi
+    lda #1
+    sta mob_active
+    cli
 
     lda #$30            ; очистити текстовий шар
     jsr lcd_cmd
@@ -226,7 +261,13 @@ new_game:
 
 ; --- Головний цикл: кнопка -> дія -> новий кадр -------------------------------
 main_loop:
+    jsr service_mobs
+    lda hp
+    beq died
     jsr wait_tick
+    jsr service_mobs
+    lda hp
+    beq died
     lda PORTA
     eor #$FF
     and #$1F
@@ -255,6 +296,7 @@ main_loop:
     bra main_loop
 
 died:
+    stz mob_active
     jsr text_screen
     PRINT ROW1, s_died
     jsr show_kills
@@ -262,6 +304,7 @@ died:
     jmp new_game
 
 exit_found:
+    stz mob_active
     jsr text_screen
     PRINT ROW1, s_exit
     jsr show_kills
@@ -340,7 +383,6 @@ btn_action:
 @save:
     sta ammo
 @shot:
-    jsr update_enemies
     lda #1              ; кадр зі спалахом, пауза, звичайний кадр
     sta muzzle
     jsr update_view
@@ -428,30 +470,266 @@ move:                   ; tmp2: 0 = вперед, 1 = назад; крок 1/4 �
     lda candh
     sta posY_hi
 @done:
-    jsr update_enemies
     jmp update_view
 
-; Демони кусають, якщо стоять у сусідній клітинці
+; Забрати один сигнал атомарно: IRQ може додати наступний під час ходу/кадру.
+service_mobs:
+    sei
+    lda mob_pending
+    bne :+
+    cli
+    rts
+:
+    dec mob_pending
+    cli
+    jsr update_enemies
+    lda mob_changed
+    beq :+
+    jsr update_view
+:
+    rts
+
+; Спочатку позначаємо всіх живих демонів старшим бітом карти. Це знімок
+; початку ходу: переміщений демон записується без біта й не ходить вдруге.
 update_enemies:
-    ldx #3
-@l:
-    lda posX_hi
-    clc
-    adc dir_dx,x
+    stz mob_changed
+    stz mob_scan_y
+@mark_row:
+    stz mob_scan_x
+@mark_col:
+    lda mob_scan_x
     sta tx
-    lda posY_hi
-    clc
-    adc dir_dy,x
+    lda mob_scan_y
     sta ty
-    jsr get_tile        ; X не змінюється
+    jsr get_tile
     cmp #T_DEMON
-    bne @n
+    bne :+
+    lda #(T_DEMON | $80)
+    sta (map_ptr)
+:
+    inc mob_scan_x
+    lda mob_scan_x
+    cmp #32
+    bne @mark_col
+    inc mob_scan_y
+    lda mob_scan_y
+    cmp #32
+    bne @mark_row
+    stz mob_scan_y
+@row:
+    stz mob_scan_x
+@col:
+    lda mob_scan_x
+    sta tx
+    lda mob_scan_y
+    sta ty
+    jsr get_tile
+    cmp #(T_DEMON | $80)
+    bne @next
+    lda #T_DEMON         ; більше не позначений: цей моб вже діє
+    sta (map_ptr)
+    lda mob_scan_x
+    sta mob_x
+    lda mob_scan_y
+    sta mob_y
+    jsr mob_act
+@next:
+    inc mob_scan_x
+    lda mob_scan_x
+    cmp #32
+    bne @col
+    inc mob_scan_y
+    lda mob_scan_y
+    cmp #32
+    bne @row
+    rts
+
+mob_act:
+    ; |dx|, |dy| та знаки кроку від моба до гравця.
+    lda #1
+    sta mob_sx
+    sta mob_sy
+    lda posX_hi
+    sec
+    sbc mob_x
+    bcs :+
+    eor #$FF
+    inc a
+    ldx #$FF
+    stx mob_sx
+:
+    sta mob_dx
+    lda posY_hi
+    sec
+    sbc mob_y
+    bcs :+
+    eor #$FF
+    inc a
+    ldx #$FF
+    stx mob_sy
+:
+    sta mob_dy
+    clc
+    adc mob_dx
+    cmp #(MOB_RANGE + 1)
+    bcs @move
+    jsr mob_line_of_sight
+    bcc @move
     lda hp
-    beq @n
-    dec hp
-@n:
-    dex
-    bpl @l
+    beq @done
+    sec
+    sbc #MOB_DAMAGE
+    bcs :+
+    lda #0
+:
+    sta hp
+    lda #1
+    sta mob_changed
+@done:
+    rts
+@move:
+    ; Спочатку X, якщо заблоковано або X збігається — Y.
+    lda mob_dx
+    beq @try_y
+    lda mob_x
+    clc
+    adc mob_sx
+    sta tx
+    lda mob_y
+    sta ty
+    jsr mob_try_move
+    bcs @done
+@try_y:
+    lda mob_dy
+    beq @done
+    lda mob_x
+    sta tx
+    lda mob_y
+    clc
+    adc mob_sy
+    sta ty
+    jmp mob_try_move
+
+; C=1 якщо клітинку переміщення зайнято цим мобом.
+mob_try_move:
+    lda tx
+    cmp posX_hi
+    bne :+
+    lda ty
+    cmp posY_hi
+    beq @blocked
+:
+    jsr get_tile
+    bne @blocked
+    lda #T_DEMON
+    sta (map_ptr)
+    lda mob_x
+    sta tx
+    lda mob_y
+    sta ty
+    jsr get_tile
+    lda #0
+    sta (map_ptr)
+    lda #1
+    sta mob_changed
+    sec
+    rts
+@blocked:
+    clc
+    rts
+
+; Bresenham між центрами клітинок, з перевіркою обох боків діагонального
+; кута: стіна або двері не пропускають постріл крізь кут. C=1 — видно.
+mob_line_of_sight:
+    lda mob_x
+    sta mob_los_x
+    lda mob_y
+    sta mob_los_y
+    lda mob_dx
+    sec
+    sbc mob_dy
+    sta mob_err
+@step:
+    lda mob_los_x
+    sta mob_old_x
+    lda mob_los_y
+    sta mob_old_y
+    lda mob_err
+    asl
+    sta mob_e2
+    stz mob_moved_x
+    clc
+    adc mob_dy          ; e2 > -dy
+    bmi @skip_x
+    beq @skip_x
+    lda mob_err
+    sec
+    sbc mob_dy
+    sta mob_err
+    lda mob_los_x
+    clc
+    adc mob_sx
+    sta mob_los_x
+    inc mob_moved_x
+@skip_x:
+    lda mob_e2
+    sec
+    sbc mob_dx          ; e2 < dx
+    bpl @check_target
+    lda mob_err
+    clc
+    adc mob_dx
+    sta mob_err
+    lda mob_los_y
+    clc
+    adc mob_sy
+    sta mob_los_y
+    lda mob_moved_x
+    beq @check_target
+    lda mob_los_x       ; обидва сусіди кута повинні бути прозорі
+    sta tx
+    lda mob_old_y
+    sta ty
+    jsr mob_los_blocked
+    bcs @blocked
+    lda mob_old_x
+    sta tx
+    lda mob_los_y
+    sta ty
+    jsr mob_los_blocked
+    bcs @blocked
+@check_target:
+    lda mob_los_x
+    cmp posX_hi
+    bne @check_cell
+    lda mob_los_y
+    cmp posY_hi
+    beq @visible
+@check_cell:
+    lda mob_los_x
+    sta tx
+    lda mob_los_y
+    sta ty
+    jsr mob_los_blocked
+    bcc @step
+@blocked:
+    clc
+    rts
+@visible:
+    sec
+    rts
+
+; Демони не є стінами; решта ненульових клітинок непрозора.
+mob_los_blocked:
+    jsr get_tile
+    and #$7F
+    beq @clear
+    cmp #T_DEMON
+    beq @clear
+    sec
+    rts
+@clear:
+    clc
     rts
 
 ; A = клітинка (tx, ty); map_ptr вказує на неї. X і Y не змінюються.
@@ -1647,8 +1925,30 @@ pause:                  ; A = кадрів по 20 мс
     rts
 
 irq:
+    pha
     bit T1CL
     inc tick
+    lda mob_active
+    beq @done
+    lda mob_timer_lo
+    bne :+
+    dec mob_timer_hi
+:
+    dec mob_timer_lo
+    lda mob_timer_lo
+    ora mob_timer_hi
+    bne @done
+    lda mob_pending
+    cmp #$FF             ; не загубити відкладений хід через переповнення
+    beq :+
+    inc mob_pending
+:
+    lda #<MOB_INTERVAL
+    sta mob_timer_lo
+    lda #>MOB_INTERVAL
+    sta mob_timer_hi
+@done:
+    pla
 nmi:
     rti
 

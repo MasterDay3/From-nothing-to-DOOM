@@ -30,7 +30,7 @@ cli: rom.bin
 	$(PY) emu.py rom.bin 200000
 
 test: check-cpu
-	cd tests && $(PY) test_emu.py && $(PY) test_programs.py
+	cd tests && $(PY) test_emu.py && $(PY) test_programs.py && $(PY) test_mobs.py
 
 clean:
 	rm -f *.o rom.bin
