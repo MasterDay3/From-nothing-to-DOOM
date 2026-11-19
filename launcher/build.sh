@@ -1,5 +1,5 @@
 #!/bin/sh
-# Зібрати ROM лаунчера: меню + DOOM + Вгадай число.
+# Зібрати ROM лаунчера: меню + DOOM + Вгадай число + Змійка.
 #   ./launcher/build.sh
 #   ./emulator_c/build/sim rom.bin
 #
@@ -14,11 +14,12 @@ OUT=launcher/build
 
 # Карта ROM — єдине місце, де задано адреси слотів (слоти йдуть підряд).
 GUESS_START=0x8800      # $8000-$87FF меню (2 KB)
-DOOM_START=0x9000       # Вгадай число (2 KB)
-SLOTS_END=0xFFFA        # DOOM (~28 KB), далі вектори CPU
+SNAKE_START=0x9000      # Вгадай число (2 KB)
+DOOM_START=0xA000       # Змійка (4 KB)
+SLOTS_END=0xFFFA        # DOOM (~24 KB), далі вектори CPU
 
 mkdir -p "$OUT"
-rm -f "$OUT"/pacman.* "$OUT"/snake.*
+rm -f "$OUT"/pacman.*
 
 # slot ГРА ПОЧАТОК КІНЕЦЬ
 slot() {
@@ -34,7 +35,8 @@ slot() {
 }
 
 echo "ROM slots:"
-slot guess  $GUESS_START  $DOOM_START
+slot guess  $GUESS_START  $SNAKE_START
+slot snake  $SNAKE_START  $DOOM_START
 slot doom   $DOOM_START   $SLOTS_END
 
 "$CA65" --cpu 65C02 launcher/launcher.s -o "$OUT/launcher.o"
