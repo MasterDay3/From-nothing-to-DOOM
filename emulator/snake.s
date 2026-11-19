@@ -644,7 +644,25 @@ draw_hud:
 ; ---------------------------------------------------------------------------
 ; Допоміжне
 
-text_screen:            ; вимкнути графіку, очистити текст
+text_screen:            ; очистити GDRAM, вимкнути графіку, очистити текст
+    lda #$36
+    jsr lcd_cmd
+    ldx #0
+@gd_row:
+    txa
+    ora #$80
+    jsr lcd_cmd
+    lda #$80
+    jsr lcd_cmd
+    ldy #32
+@gd_byte:
+    lda #0
+    jsr lcd_data
+    dey
+    bne @gd_byte
+    inx
+    cpx #32
+    bne @gd_row
     lda #$34
     jsr lcd_cmd
     lda #$30
