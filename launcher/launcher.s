@@ -234,7 +234,7 @@ draw_menu:
     PRINT ROW1, s_title
     PRINT ROW2, s_doom
     PRINT ROW3, s_guess
-    PRINT ROW4, s_pacman
+    PRINT ROW4, s_snake
     lda #15             ; лінія під заголовком
     sta bar_y
     lda #1
@@ -369,12 +369,12 @@ delay:
 s_title:  .byte "  SELECT GAME", 0
 s_doom:   .byte "  DOOM", 0
 s_guess:  .byte "  GUESS NUMBER", 0
-s_pacman: .byte "  PAC-MAN", 0
+s_snake:  .byte "  SNAKE", 0
 
-; Таблиці пунктів меню (порядок: DOOM, Вгадай число, PAC-MAN)
+; Таблиці пунктів меню (порядок: DOOM, Вгадай число, Змійка)
 item_row:     .byte ROW2, ROW3, ROW4
 uses_timer:   .byte 1, 0, 1
-game_vectors: .word doom_vectors, guess_vectors, pacman_vectors
+game_vectors: .word doom_vectors, guess_vectors, snake_vectors
 
 ; ---------------------------------------------------------------------------
 ; Ігри: готові слоти від build.sh (адреси збігаються з slot.cfg)
@@ -384,8 +384,8 @@ game_vectors: .word doom_vectors, guess_vectors, pacman_vectors
     .incbin "build/guess.slot"
 guess_vectors = * - 6
 
-    .incbin "build/pacman.slot"
-pacman_vectors = * - 6
+    .incbin "build/snake.slot"
+snake_vectors = * - 6
 
     .incbin "build/doom.slot"
 doom_vectors = * - 6

@@ -1,7 +1,7 @@
 #!/bin/sh
-# Зібрати ROM лаунчера: меню + DOOM + Вгадай число + PAC-MAN.
+# Зібрати ROM лаунчера: меню + DOOM + Вгадай число + Змійка.
 #   ./launcher/build.sh
-#   ./emulator_c/build/sim launcher/build/rom.bin
+#   ./emulator_c/build/sim rom.bin
 #
 # Кожна гра асемблюється з emulator/*.s без жодних змін і лінкується у свій
 # слот ROM; потім launcher.s підключає слоти через .incbin.
@@ -14,11 +14,12 @@ OUT=launcher/build
 
 # Карта ROM — єдине місце, де задано адреси слотів (слоти йдуть підряд).
 GUESS_START=0x8800      # $8000-$87FF меню (2 KB)
-PACMAN_START=0x9000     # Вгадай число (2 KB)
-DOOM_START=0xA000       # PAC-MAN (4 KB)
+SNAKE_START=0x9000      # Вгадай число (2 KB)
+DOOM_START=0xA000       # Змійка (4 KB)
 SLOTS_END=0xFFFA        # DOOM (~24 KB), далі вектори CPU
 
 mkdir -p "$OUT"
+rm -f "$OUT"/pacman.*
 
 # slot ГРА ПОЧАТОК КІНЕЦЬ
 slot() {
@@ -34,8 +35,8 @@ slot() {
 }
 
 echo "ROM slots:"
-slot guess  $GUESS_START  $PACMAN_START
-slot pacman $PACMAN_START $DOOM_START
+slot guess  $GUESS_START  $SNAKE_START
+slot snake  $SNAKE_START  $DOOM_START
 slot doom   $DOOM_START   $SLOTS_END
 
 "$CA65" --cpu 65C02 launcher/launcher.s -o "$OUT/launcher.o"
@@ -43,5 +44,6 @@ slot doom   $DOOM_START   $SLOTS_END
 
 size=$(wc -c < "$OUT/rom.bin" | tr -d ' ')
 [ "$size" -eq 32768 ] || { echo "error: $OUT/rom.bin is $size bytes, expected 32768" >&2; exit 1; }
-echo "OK: $OUT/rom.bin"
-echo "Run: ./emulator_c/build/sim $OUT/rom.bin"
+cp "$OUT/rom.bin" rom.bin
+echo "OK: $OUT/rom.bin (copied to rom.bin)"
+echo "Run: ./emulator_c/build/sim rom.bin"
