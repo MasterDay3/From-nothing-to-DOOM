@@ -31,7 +31,7 @@ EXIT_KEYS  = BTN_LEFT | BTN_RIGHT
 EXIT_TICKS = 50         ; 50 тіків по 20 мс = 1 с
 TICK       = 20000 - 2  ; 20 мс при 1 MHz, як в іграх
 
-NUM_GAMES = 3
+NUM_GAMES = 2
 
 ; Стан лаунчера, який живе й під час гри: верхні 16 байтів RAM.
 ; Ігри їх не чіпають: DOOM закінчується на $13FF, PAC-MAN на $087F,
@@ -234,7 +234,6 @@ draw_menu:
     PRINT ROW1, s_title
     PRINT ROW2, s_doom
     PRINT ROW3, s_guess
-    PRINT ROW4, s_snake
     lda #15             ; лінія під заголовком
     sta bar_y
     lda #1
@@ -369,12 +368,11 @@ delay:
 s_title:  .byte "  SELECT GAME", 0
 s_doom:   .byte "  DOOM", 0
 s_guess:  .byte "  GUESS NUMBER", 0
-s_snake:  .byte "  SNAKE", 0
 
-; Таблиці пунктів меню (порядок: DOOM, Вгадай число, Змійка)
-item_row:     .byte ROW2, ROW3, ROW4
-uses_timer:   .byte 1, 0, 1
-game_vectors: .word doom_vectors, guess_vectors, snake_vectors
+; Таблиці пунктів меню (порядок: DOOM, Вгадай число)
+item_row:     .byte ROW2, ROW3
+uses_timer:   .byte 1, 0
+game_vectors: .word doom_vectors, guess_vectors
 
 ; ---------------------------------------------------------------------------
 ; Ігри: готові слоти від build.sh (адреси збігаються з slot.cfg)
@@ -383,9 +381,6 @@ game_vectors: .word doom_vectors, guess_vectors, snake_vectors
 
     .incbin "build/guess.slot"
 guess_vectors = * - 6
-
-    .incbin "build/snake.slot"
-snake_vectors = * - 6
 
     .incbin "build/doom.slot"
 doom_vectors = * - 6

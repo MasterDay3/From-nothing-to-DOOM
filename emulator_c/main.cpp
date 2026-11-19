@@ -118,7 +118,6 @@ static void lcdWrite(bool rs, uint8_t d) {
     }
 
     if (!rs && d >= 0x04 && d <= 0x07) return;      // entry mode: breaks St7920Emulator
-    if (!rs && d == 0x34) d = 0x36;                 // allow GDRAM writes under $34
     lcd.parseSerialData(rs ? 0xFA : 0xF8);
     lcd.parseSerialData(d & 0xF0);
     lcd.parseSerialData((d << 4) & 0xF0);
@@ -358,13 +357,13 @@ int main(int argc, char **argv) {
             buttons = newButtons;
         }
 
-        for (int i = 0; i < (fast ? cyclesPerFrame * 20 : cyclesPerFrame) && !quitRequested; ++i)
+        for (int i = 0; i < (fast ? cyclesPerFrame * 5 : cyclesPerFrame) && !quitRequested; ++i)
             step();
 
         render(r, tex);
 
         double elapsed = (double)(SDL_GetPerformanceCounter() - start) / freq;
-        if (!fast && elapsed < 1.0 / 60.0)
+        if (elapsed < 1.0 / 60.0)
             SDL_Delay((Uint32)((1.0 / 60.0 - elapsed) * 1000.0));
     }
 

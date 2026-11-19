@@ -30,32 +30,29 @@ void St7920Emulator::parseCommandByte() {
     // Check highest byte set
     // Set DDRAM/Grapic RAM address
     if ((ui8DataByte_ & 0b10000000) > 0) {
-        // Check for extended mode
+        // Check for extended mode (GDRAM address commands work under both $34 and $36)
         if (ui8ExtendedMode_ > 0) {
-            // Check if graphic mode is enabled
-            if (ui8GraphicMode_ > 0) {
-                // Check if current byte is for Y
-                if (lastCommand_ != CT_GdramAddress) {
-                    // First byte is Y
-                    ui8AddressY_ = ui8DataByte_ & 0b111111;
+            // Check if current byte is for Y
+            if (lastCommand_ != CT_GdramAddress) {
+                // First byte is Y
+                ui8AddressY_ = ui8DataByte_ & 0b111111;
 
-                    // Store command
-                    lastCommand_ = CT_GdramAddress;
-                } else {
-                    // Second byte is X
-                    ui8AddressX_ = (ui8DataByte_ & 0b111) * 2;
+                // Store command
+                lastCommand_ = CT_GdramAddress;
+            } else {
+                // Second byte is X
+                ui8AddressX_ = (ui8DataByte_ & 0b111) * 2;
 
-                    // Check if we need to move the y cursor to the second half of the display
-                    if ((ui8DataByte_ & 0b1000) > 0) {
-                        ui8AddressY_ = (ui8AddressY_ + 32) & 0b111111;
-                    }
-
-                    // Clear command
-                    lastCommand_ = CT_None;
-
-                    // Set data target
-                    dataTarget_ = DT_GDRAM;
+                // Check if we need to move the y cursor to the second half of the display
+                if ((ui8DataByte_ & 0b1000) > 0) {
+                    ui8AddressY_ = (ui8AddressY_ + 32) & 0b111111;
                 }
+
+                // Clear command
+                lastCommand_ = CT_None;
+
+                // Set data target
+                dataTarget_ = DT_GDRAM;
             }
         } else {
             // Set DDRAM address
@@ -104,8 +101,15 @@ void St7920Emulator::parseCommandByte() {
 
         // Check for graphic mode flag
         if (ui8ExtendedMode_ > 0) {
-            // Get graphic mode flag
-            ui8GraphicMode_ = ui8DataByte_ & 0b10;
+            uint8_t ui8NewGraphicMode = ui8DataByte_ & 0b10;
+            if (ui8NewGraphicMode != ui8GraphicMode_) {
+                ui8GraphicMode_ = ui8NewGraphicMode;
+                for (uint8_t y = 0; y < 64; ++y) {
+                    for (uint8_t x = 0; x < 16; ++x) {
+                        showByte(x, y);
+                    }
+                }
+            }
         }
 
         // Store command
@@ -394,8 +398,9 @@ void St7920Emulator::showByte(uint8_t x, uint8_t y) {
         ui8DdRam = pFont816[ui16CharIdx];
     }
 
-    // Show result of DDRAM XOR GDRAM
-    fDrawByte_(x * 8, y, ui8DdRam ^ pGdRam_[y][x]);
+    // Show DDRAM XOR GDRAM (only when graphic mode is enabled)
+    uint8_t ui8GdRam = (ui8GraphicMode_ > 0) ? pGdRam_[y][x] : 0;
+    fDrawByte_(x * 8, y, ui8DdRam ^ ui8GdRam);
 }
 
 const uint8_t St7920Emulator::pByteFlip[256] = {
